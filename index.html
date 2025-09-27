@@ -3,53 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Steddit | Solving the world's problems</title>
+  <title>Steddit</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <div class="logo">Steddit</div>
+    <h1>Steddit</h1>
     <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><button id="toggle-theme">🌙</button></li>
-      </ul>
+      <button id="themeToggle">Toggle Theme</button>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Solving the world's problems,<br>one line of code at a time.</h1>
-    <a href="#projects" class="cta">View My Work</a>
-  </section>
+  <main>
+    <section class="card">
+      <h2>Welcome to Steddit</h2>
+      <p>A space for developers to share, solve, and shine.</p>
+    </section>
 
-  <section id="projects" class="projects">
-    <h2>Featured Projects</h2>
-    <div class="project-grid">
-      <!-- Add your projects here -->
-    </div>
-  </section>
-
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>Hi, I'm Roland—a developer from Kenya passionate about solving real-world problems through code. I specialize in JavaScript and love connecting with tech communities.</p>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <form id="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <p id="form-response"></p>
-  </section>
+    <section class="card">
+      <h3>Latest Threads</h3>
+      <ul id="threadList">
+        <li>🧠 Async JavaScript tips</li>
+        <li>🎨 Logo feedback for Steddit</li>
+        <li>🚀 Deployment strategies</li>
+      </ul>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Steddit. Built with ❤️ and JavaScript.</p>
+    <p>Built by Roland • Powered by curiosity</p>
   </footer>
 
   <script src="script.js"></script>
